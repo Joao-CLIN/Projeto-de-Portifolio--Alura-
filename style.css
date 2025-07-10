@@ -1,8 +1,8 @@
 :root{
     --background-color: #000000; 
     --color-principal:#ffffff;
-    --fonte-principal: @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');;
-    --fonte--secundaria: @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Michroma&family=Montserrat&family=Permanent+Marker&display=swap');
+    --fonte-principal: @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+    --fonte--secundaria:@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
 }
 *{
     margin:0;
@@ -19,34 +19,47 @@ body{
     color: #22D4FD;
  }
  .principal{
-    margin: 10%;
+   margin: 10% 15%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;  
  }
  .descricao{
-    width: 615px;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
  }
  .descricao_titulo{
-    font-size: 36px;
+    font-size: 2.0rem;
     font-family: 'Krona One', sans-serif;
  }
  .descricao_conteudo{
-   font-size: 20px;
+   font-size: 1.25rem;
    font-family: 'Montserrat', sans-serif;
+
  }
  .descricao_botoes{
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
+   flex-direction: column; 
    align-items: center;
-   padding: 40px;
-
- }
+   gap: 1rem
+}
 .descricao_botao{
-   width: 280px;
-   background-color: #22D4FD;
-   border-radius: 15px;
-
-   font-size: 24px;
-   align-items: center;
+   /* background-color: #22D4FD; */
+   text-align: center;
+   width: 8rem;
+   padding: 1.344rem 1.813rem;
+   border-radius: 0.5rem;
+   text-decoration: none;
+   color:#f0f0f0;
+   font-family: 'Montserrat', sans-serif;
+   border: solid 0.063rem #22D4FD;
+}
+.principal img{
+   width: 25rem;
+   height: auto;
+   border-radius: 1rem;
 }
